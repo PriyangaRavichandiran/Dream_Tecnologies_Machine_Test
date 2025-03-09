@@ -1,0 +1,662 @@
+body {
+    font-family: Outfit;
+    
+}
+.backdrop {
+    position: absolute;
+    top: 440px;
+    width: 10px;
+}
+.coach-btn{
+    display: grid;
+    justify-items: center;
+    
+}
+ul.navbar-nav {
+    margin: 0 auto;
+}
+.side-imgnew{
+    left: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+.side-img{
+    width: 200px;
+    right: -72px;
+    position: absolute;
+    top: 973px;
+}
+.featured-venues-section {
+    /* The background image will now be applied to the entire section */
+    text-align: center;
+    color: #333; 
+    position: relative; 
+  }
+  
+  .featured-venues-content {
+    max-width: 800px;
+    margin: 0 auto;
+    /* Remove the background color from here */
+    padding: 30px;
+  }
+  
+  .featured-venues-title {
+    font-size: 2.5em;
+    color: #000; /* Darker title color */
+    margin-bottom: 20px;
+    position: relative; 
+    bottom: 56px;
+  }
+  
+  .featured-venues-icon {
+    /* margin-bottom: 20px; */
+    position: relative; /* Ensure icon is above the image */
+ 
+  }
+  
+  .featured-venues-icon img {
+    width: 100px;
+    height: auto;
+
+  }
+  
+  .featured-venues-description {
+    font-size: 20px;
+    line-height: 1.6;
+    position: relative;
+    bottom: 50px;
+    
+  }
+.navbar{
+padding-top:20px ;
+}
+.nav-link {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  nav li {
+    position: relative; /* Needed for absolute positioning of the image */
+    margin: 0 0px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color:#AAF40C;
+    padding-bottom: 5px; /* give some space for image */
+  }
+
+  nav ul img {
+    position: absolute;
+    bottom: 100%; /* Position above the link */
+    left: 50%;
+    transform: translateX(-50%) translateY(20px); /* Center and move slightly up */
+    width: 30px; /* Adjust as needed */
+    opacity: 0; /* Initially hidden */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  nav li:hover img,
+  nav li.active img {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); /* Move down to be above the text */
+  }
+
+  nav li:hover a {
+    color: #AAF40C; 
+    font-weight: bold; 
+  }
+  .custom-button {
+    border-radius: 8px; /* Rounded corners */
+    font-weight: 500; /* Medium font weight */
+    padding: 12px 24px; /* Adjust padding as needed */
+    display: inline-flex; /* Use flexbox for icon alignment */
+    align-items: center; /* Center icons vertically */
+}
+.nav-bar-button {
+    padding: 0 25px;
+}
+.custom-button i {
+    margin-right: 8px; /* Space between icon and text */
+}
+.search-bar {
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+.search-bar .dropdown {
+    margin-right: 10px;
+}
+.search-bar .form-control {
+    border: none;
+    background-color: transparent;
+    width: 200px; /* Adjust width as needed */
+}
+.search-bar .search-btn {
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: auto; /* Push to the right */
+}
+.search-bar .search-btn i {
+    font-size: 1.2em;
+}
+.search-btn {
+    background-color: transparent; /* Transparent background */
+    color: #28a745; /* Green text color */
+    border: 2px solid #28a745; /* Green border */
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: auto; /* Push to the right */
+}
+  .img-fluid {
+    position: relative;
+    bottom: 130px;
+}
+
+.bg-light {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    margin: 0 10px;
+    
+}
+
+.hero-content {
+    padding: 125px 0 0 116px;
+}
+
+.hero-background {
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px; */
+    /* background-image: url('Group\ 1000003135.png'); */
+    background-image: url('./image/background.png');
+    position: relative;
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.search-input,
+.location-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 40%;
+    /* Adjust width as needed */
+    color: black;
+    /* Text color */
+}
+
+.search-button {
+    background-color: #007bff;
+    /* Adjust color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-search-bar input[type="text"] {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.search-icon::before {
+    content: "\1F50D";
+    /* Unicode for magnifying glass */
+    font-size: 16px;
+    /* Adjust size as needed */
+    margin-right: 8px;
+    /* Space between icon and text */
+    color: #fff;
+    /* White icon color */
+}
+
+
+
+
+.how-it-works {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.how-it-works img {
+    
+    margin-bottom: 20px;
+}
+
+.coach-profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 390px;
+    /* Adjust width as needed */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.featured-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #00bcd4;
+    /* Adjust color */
+    color: white;
+    padding: 5px 20px;
+    /* transform: rotate(-45deg); */
+    font-size: 12px;
+}
+
+.price-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4caf50;
+    /* Adjust color */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.card-content {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.rating-reviews {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+}
+
+.rating {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.reviews {
+    color: #888;
+}
+
+
+.heart-icon {
+    size: 10px;
+    /* Add heart icon styling */
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.card-description {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.location,
+.availability {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.location-icon,
+.calendar-icon {
+    margin-right: 5px;
+    /* Add icon styling */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.book-button {
+    
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    background-color: none;
+}
+
+.book-button span {
+    margin-left: 5px;
+}
+
+.search-bar input [type="text"] {
+    border: none;
+    background: transparent;
+    color: #fff;
+    /* White text color */
+    font-size: 16px;
+    /* Adjust font size */
+    font-family: sans-serif;
+    /* Use a clean sans-serif font */
+    outline: none;
+    /* Remove default focus outline */
+}
+
+footer {
+    background-color: #1D3563;
+    color: white;
+}
+
+
+.footer-container {
+    background-color: #1A237E;
+    /* Dark blue background */
+    color: white;
+}
+
+/* Welcome Message Section */
+.welcome-message {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.welcome-message h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.join-us-btn {
+    background-color: #4CAF50;
+    /* Green button */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-us-btn:hover {
+    background-color: #43A047;
+    /* Darker green on hover */
+}
+
+/* Footer Styles */
+.footer {
+    padding: 40px 20px;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    height: 15px;
+    margin-right: 5px;
+}
+
+.bottom-footer {
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+}
+
+.bottom-footer p {
+    margin: 0;
+}
+
+.bottom-footer .text-right {
+    text-align: right;
+}
+
+
+.newsletter-section {
+    background-color: #f5f5f5;
+    /* Adjusted background color */
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.newsletter-content {
+    display: flex;
+    align-items: center;
+    background-image: url(image/background.png);
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('Rectangle\ 4858.png'); */
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-image {
+    flex: 1;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 1;
+}
+
+.newsletter-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.newsletter-form {
+    flex: 1;
+    padding: 30px;
+    text-align: left;
+}
+
+.newsletter-form h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: white;
+    /* Slightly darker heading color */
+}
+
+.newsletter-form p {
+    font-size: 1em;
+    margin-bottom: 25px;
+    color: white;
+    /* Adjusted text color */
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group .btn {
+    position: relative;
+    z-index: 1;
+    right: 100px;
+    margin: 0 0px;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    /* Kept Bootstrap's primary blue */
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+/* Badminton shuttlecock images */
+.newsletter-section::before,
+.newsletter-section::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('image/shuttlecock.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.how-it-works::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('image/shuttlecock.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.how-it-works::after {
+    top: 1000px;
+    left: 120px;
+
+}
+.newsletter-section::before {
+    top: 20px;
+    left: 20px;
+}
+
+.newsletter-section::after {
+    bottom: 20px;
+    right: 20px;
+}
+
+.how-it-works::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('image/boy-playing.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+.how-it-works::before {
+    
+    right: 1450px;
+}
+
+
+#roaming-shuttle {
+    position: absolute;
+    width: 50px;
+    animation: roam 15s linear infinite; /* Increased duration for smoother zig-zag */
+  }
+  
+  @keyframes roam {
+    0% {
+      top: 10%;
+      left: 10%;
+    }
+    15% {
+      top: 40%; /* Move down and slightly right */
+      left: 25%;
+    }
+    30% {
+      top: 10%; /* Move back up and more right */
+      left: 50%;
+    }
+    45% {
+      top: 40%; /* Move down again and more right */
+      left: 75%;
+    }
+    60% {
+      top: 80%; /* Move further down and to the right edge */
+      left: 90%;
+    }
+    75% {
+      top: 50%; /* Move up and slightly left */
+      left: 75%;
+    }
+    90% {
+      top: 80%; /* Move down and more left */
+      left: 50%;
+    }
+    100% {
+      top: 10%; /* Return to starting position */
+      left: 10%;
+    }
+  }
