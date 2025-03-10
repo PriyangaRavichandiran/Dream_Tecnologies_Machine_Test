@@ -1,5 +1,6 @@
 body {
     font-family: Outfit;
+    width: auto;
     
 }
 .backdrop {
@@ -90,7 +91,6 @@ nav ul {
 
   nav a {
     text-decoration: none;
-    color:#AAF40C;
     padding-bottom: 5px; /* give some space for image */
   }
 
@@ -107,11 +107,11 @@ nav ul {
   nav li:hover img,
   nav li.active img {
     opacity: 1;
-    transform: translateX(-50%) translateY(0); /* Move down to be above the text */
+    transform: translateX(-50%) translateY(0)
   }
 
-  nav li:hover a {
-    color: #AAF40C; 
+  nav li:hover a  {
+    color: #AAF40C !important; 
     font-weight: bold; 
   }
   .custom-button {
@@ -141,15 +141,16 @@ nav ul {
 .search-bar .form-control {
     border: none;
     background-color: transparent;
-    width: 200px; /* Adjust width as needed */
+    /* width: 200px;  */
 }
 .search-bar .search-btn {
-    background-color: #28a745; /* Green button */
     color: white;
     border: none;
     border-radius: 8px;
     padding: 10px 15px;
     margin-left: auto; /* Push to the right */
+    background-image: url(image/background.png);
+    
 }
 .search-bar .search-btn i {
     font-size: 1.2em;
@@ -186,10 +187,8 @@ nav ul {
 
 .hero-background {
     /* top: 0;
-    left: 0;
-    width: 100%;
-    height: 800px; */
-    /* background-image: url('Group\ 1000003135.png'); */
+    left: 0;*/
+    width: 104vw;
     background-image: url('./image/background.png');
     position: relative;
     min-height: 800px;
@@ -225,7 +224,6 @@ nav ul {
     background: transparent;
     color: #fff;
     font-size: 16px;
-    font-family: sans-serif;
     outline: none;
 }
 
@@ -398,6 +396,7 @@ nav ul {
 }
 
 footer {
+    width: 104vw;
     background-color: #1D3563;
     color: white;
 }
@@ -576,6 +575,17 @@ footer {
     opacity: 0.3;
 }
 
+
+.newsletter-section::before {
+    top: 20px;
+    left: 20px;
+}
+
+.newsletter-section::after {
+    bottom: 20px;
+    right: 20px;
+}
+
 .how-it-works::after {
     content: "";
     position: absolute;
@@ -591,16 +601,6 @@ footer {
     left: 120px;
 
 }
-.newsletter-section::before {
-    top: 20px;
-    left: 20px;
-}
-
-.newsletter-section::after {
-    bottom: 20px;
-    right: 20px;
-}
-
 .how-it-works::before{
     content: "";
     position: absolute;
